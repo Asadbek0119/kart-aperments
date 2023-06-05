@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lp2/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/quizslider.css">
+    <link rel="stylesheet" href="./src/css/style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./netcat_files/c/s1200.jpg" rev="shortcut icon">
+    <link rel="icon" href="./netcat_files/c/s1200.jpg" rev="shortcut icon">
+</head>
+<body>
+
+
+
+
+    <nav class="navbar navbar-light navbar-expand-xl fixed-top">
+        <div class="container row">
+            <a class="mr-auto order-first" href="#"><img src="./src/images/logo.png"></a>
+            <div class="collapse navbar-collapse order-4 order-xl-2" id="Navbar">
+                <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a itemprop="url" class="nav-link" href="#">О комплексе</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#photoSection"></span>Фото</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#pricesSection">Цены и планировки</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link d-none d-md-block" href="#mapSection">Расположение</a></li>
+                    <li class="nav-item"><a itemprop="url" class="nav-link" href="#contactsSection">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-row phone-wrapper order-2  order-md-3">
+                <div class="phone align-self-center d-md-block">
+                    <img class="value security-img-small" src="./src/images/security-on.png">
+                    <a href="tel:+7 (928) 854 97 23">
+                                                            +7 (928) 854 97 23                                                    </a>
+                    <div class="text d-none d-md-block">Официальный сайт застройщика</div>
+                </div>
+            </div>
+            <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="navbar-callback-button d-none d-xl-block callback-modal order-md-4" data-toggle="modal" data-target="#modal_formCall">Перезвонить мне</div>
+        </div>
+    </nav>
+
+
+    <!-- микроразметка для ЖК-->
+    <div itemscope itemtype="http://schema.org/Organization" class="d-none">
+        <span itemprop="name">Карат Апартамент</span>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">ул. Орджоникидзе, 15к17</span>
+            <span itemprop="postalCode">354000</span>
+            <span itemprop="addressLocality">Сочи</span>
+        </div>
+        <span itemprop="telephone">+7 (928) 854 97 23</span>
+    </div>
+    <!-- /микроразметка -->
+    <!-- ЭТО ВЕРХНЯЯ ЧАСТЬ С КАРТИНКОЙ и БЛОКОМ С СТРЕЛКОЙ ДЛЯ МОБИЛЬНИКОВ -->
+    <section class="section-zero d-lg-none">
+        <div class="container" style="background-image: url();min-height: 155px;"></div>
+    </section>
+    <div class='col-12 col-lg-5 order-3 d-flex d-md-none flex-column header-title d-lg-none'>
+        <img src="./src/images/security-on.png" alt="logo">
+        <p class="partner">Официальный сайт застройщика</p>
+        <h2>Карат Апартамент</h2>
+        <button class="btn btn-danger rounded-btn big-btn callback-modal" data-toggle="modal" data-target="#modal_formFlats">Узнать цены и подробности</button>
+        <p class="text-center phone-number">+7 (928) 854 97 23</p>
+        <p>Сочи</p>
+        <p class="small-text">Предлагаем купить квартиру в Карат Апартамент Сочи у официального партнера застройщика</p>
+    </div>
+    <!-- КОНЕЦ БЛОКА С КАРТИНКОЙ И СТРЕЛКОЙ ДЛЯ МОБИЛЬНИКОВ -->
+    <!-- ЭТО ВЕРХНЯЯ ЧАСТЬ С КАРТИНКОЙ и БЛОКОМ С СТРЕЛКОЙ ДЛЯ ПЛАНШЕТОВ -->
+    <div class="section-half d-none d-md-block d-lg-none">
+        <div class="main-image-ipad"></div>
+        <div class='col-8 offset-2 d-flex flex-column header-title'>
+            <img src="./src/images/security-on.png" alt="logo">
+            <p class="partner">Официальный сайт застройщика</p>
+            <h3>Карат Апартамент</h3>
+            <button class="btn btn-danger rounded-btn big-btn callback-modal" data-toggle="modal" data-target="#modal_formFlats">Узнать цены и подробности</button>
+            <p class="text-center phone">+7 (928) 854 97 23</p>
+            <p>Сочи</p>
+            <p class="small-text">Предлагаем купить квартиру в Карат Апартамент Сочи у официального партнера застройщика</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ БЛОКА С КАРТИНКОЙ И СТРЕЛКОЙ ДЛЯ ПЛАНШЕТОВ -->
+    <!-- ЭТО ВЕРХНЯЯ ЧАСТЬ С КАРТИНКОЙ и БЛОКОМ С СТРЕЛКОЙ ДЛЯ DESKTOP -->
+    <section class="section-one d-none d-lg-block">
+        <div class="container d-flex flex-nowrap">
+            <div class='d-flex flex-column header-title d-none d-lg-block'>
+                <img src="./src/images/security-on.png" alt="logo">
+                <p class="partner">Официальный сайт застройщика</p>
+                <h1>Карат Апартамент</h1>
+                <button class="btn btn-danger rounded-btn big-btn callback-modal" data-toggle="modal" data-target="#modal_formFlats">Узнать цены и подробности</button>
+                <p class="phone-number">+7 (928) 854 97 23</p>
+                <p class="city-name">Сочи</p>
+                <p class="small-text">Предлагаем купить квартиру в Карат Апартамент Сочи у официального партнера застройщика</p>
+            </div>
+            <div class="triangle-block"></div>
+            <div class="main-image-right">
+                <img src="./netcat_files/10594/15396/10min.jpg" alt="Карат Апартамент">
+            </div>
+        </div>
+    </section>
+    <!-- КОНЕЦ БЛОКА С КАРТИНКОЙ И СТРЕЛКОЙ ДЛЯ DESKTOP -->
+
+
+
+    <section class="section-two">
+        <div class="container">
+            <div class="row">
+                <h3 class="section-title mt-lg-10 mb-3 mb-lg-1">Почему Карат Апартамент?</h3>
+            </div>
+            <div class="row">
+
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex single-advantage my-3 my-lg-5">
+                    <div class="advantage-image">
+                        <img src="./lp2/icons/5_ship_new.png" alt="" loading="lazy">
+                    </div>
+                    <div class="advantage-description">
+                        <h6>Вид на море</h6>
+                        <p>Из Вашего окна</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex single-advantage my-3 my-lg-5">
+                    <div class="advantage-image">
+                        <img src="./lp2/icons/6_fish_new.png" alt="" loading="lazy">
+                    </div>
+                    <div class="advantage-description">
+                        <h6>Расстояние до моря</h6>
+                        <p>Всего 192 м</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex single-advantage my-3 my-lg-5">
+                    <div class="advantage-image">
+                        <img src="./lp2/icons/7_derevo_new.png" alt="" loading="lazy">
+                    </div>
+                    <div class="advantage-description">
+                        <h6>Благоустроенная территория</h6>
+                        <p>Паркинг, охраняемая территория, видеонаблюдение, зеленая аллея</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex single-advantage my-3 my-lg-5">
+                    <div class="advantage-image">
+                        <img src="./lp2/icons/8_investicii_new.png" alt="" loading="lazy">
+                    </div>
+                    <div class="advantage-description">
+                        <h6>Выгодный инвестиционный вариант</h6>
+                        <p>Стоимость квартиры поднимется, сдача в аренду выгодна</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex single-advantage my-3 my-lg-5">
+                    <div class="advantage-image">
+                        <img src="./lp2/icons/11_medal_new.png" alt="" loading="lazy">
+                    </div>
+                    <div class="advantage-description">
+                        <h6>Элитное жильё</h6>
+                        <p>Высокое качество строительства. Ликвидное жилье.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-none d-md-flex single-advantage my-3 my-lg-5">
+                    <div class="advantage-image">
+                        <img src="./lp2/icons/12_map_new.png" alt="" loading="lazy">
+                    </div>
+                    <div class="advantage-description">
+                        <h6>Выгодное расположение</h6>
+                        <p>Развитая инфраструктура рядом</p>
+                    </div>
+                </div>
+                <button id="showMoreBtn" class="btn btn-light btn-block rounded-btn big-btn d-block d-md-none">Посмотреть ещё</button>
+
+
+            </div>
+    </section>
+
+    <section id="photoSection" class="section-three">
+        <div class="container">
+            <div class="row section-title">
+                <h3 class="section-title__title col-8 col-lg-10">Фото</h3>
+                <i class="fas fa-arrow-left col-1 prev-slide-photo slider-button" aria-hidden="true"></i>
+                <i class="fas fa-arrow-right col-1 offset-1 offset-lg-0 next-slide-photo slider-button" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id="photoSlider" class="container swiper-container">
+            <div class="photo-wrapper swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/94/a5/701__0_94a5ade410a71021400d4c8f0de2e3f6.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/1d/71/701__0_1d71a80c6248d713e6effceec8114164.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/00/52/701__0_00521b4cd1efcfcd01f448c8cff83eb5.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_3b056925f4e8c67ba7f174509bb153c2.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_f1f363f1e82aca277fa0e4fc4dc5caef.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_c528bad28f7c6d681f0010e34aaaf9a8.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_9945d29f58103f32bf96aa9288359efb.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_cd048e21a6267b14807930a3d6aba8f0.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_34f4c049344106a33d309a99035f37f8.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="">
+                        <div data-background="./upload/nc_images_cache/701__0_aebf83190f9a2a1894a63f928aec8637.webp" class="carousel-image-height swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="pricesSection" class="section-five">
+        <div class="make-borders">
+            <div class="container">
+                <div class="row form-wrapper">
+                    <div class="col-12 col-lg-5 section-title-block d-flex flex-column">
+                        <img class="d-lg-none lazyload" data-src="./src/images/book.webp" alt="">
+                        <h4 class="section-title d-lg-none">Получите сразу все<br>планировки с ценами</h4>
+                        <h3 class="section-title d-none d-lg-block">Получите сразу все<br>планировки с ценами</h3>
+                        <img class="d-none d-lg-block lazyload" data-src="./src/images/book-md.webp" alt="">
+                    </div>
+                    <div class="col-12 col-lg-3 getting-list">
+                        <h6>Оставьте свои данные<br>и вы получите</h6>
+                        <ul>
+                            <li>каталог с ценами и планировками</li>
+                            <li>документацию и информацию о жилом комплексе</li>
+                            <li>актуальные фотографии и видео</li>
+                            <li>список акционных квартир со скидками</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-form">
+                        <form class="form send-ajax" id="poluchite-srazu-vse-planirovki-s-tsenami" action="/netcat/add.php?cc=15403&sub=10594&posting=1">
+                            <input type="hidden" name="catalogue" value="249" />
+                            <input type="hidden" name="cc" value="15403" />
+                            <input type="hidden" name="sub" value="10594" />
+                            <input type="hidden" name="curPos" value="0" />
+                            <input type="hidden" name="posting" value="1" />
+                            <div class="alert alert-success" role="alert" style="display: none">
+                                <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                            </div>
+                            <input class="form-control" name="f_NAME" type="text" placeholder="Имя" required>
+                            <input class="form-control" name="f_PHONE" type="tel" placeholder="Телефон" required>
+                            <input class="form-control" name="f_EMAIL" type="email" placeholder="E-mail" required>
+                            <p><sup>Мы вышлем его на эту почту</sup></p>
+                            <button class="btn btn-block btn-danger rounded-btn big-btn" type="submit">Получить цены и планировки</button>
+                            <p class="helper-free"><sup>Бесплатно</sup></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="plansSection" class="section-four">
+        <div class="container">
+            <div class="row">
+                <h3 class="section-title col-lg-6">Апартаменты Карат Апартамент</h3>
+            </div>
+            <div id="plansSlider" class="container swiper-container">
+                <div class="plans-wrapper swiper-wrapper">
+
+
+
+
+                    <div class="swiper-slide">
+                        <div class="single-flat d-flex flex-column">
+                            <div class="plan">
+                                <img src="./upload/nc_images_cache/df/19/__0_df191bc21568327d201b0077972ac88d.webp" alt="Апартаменты Карат Апартамент">
+                            </div>
+                            <div class="flat-spec">
+                                <h6>Апартаменты с 1 спальней</h6>
+                                <p>от 95 м<sup>2</sup><br>Ремонт</p>
+                                <!-- <p>от <span class="price">0</span></p> -->
+                            </div>
+                            <button class="btn btn-block callback-modal" data-toggle="modal" data-target="#modal_formFlats">Узнать цены и подробности</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="swiper-slide">
+                        <div class="single-flat d-flex flex-column">
+                            <div class="plan">
+                                <img src="./upload/nc_images_cache/29/96/__0_2996f3f0b3ff8939a1361d557af6de2e.webp" alt="Апартаменты Карат Апартамент">
+                            </div>
+                            <div class="flat-spec">
+                                <h6>Апартаменты с 2 спальнями</h6>
+                                <p>от 150 м<sup>2</sup><br>Ремонт</p>
+                                <!-- <p>от <span class="price">0</span></p> -->
+                            </div>
+                            <button class="btn btn-block callback-modal" data-toggle="modal" data-target="#modal_formFlats">Узнать цены и подробности</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="swiper-slide">
+                        <div class="single-flat d-flex flex-column">
+                            <div class="plan">
+                                <img src="./upload/nc_images_cache/1e/5e/__0_1e5ec7db2ef74a6c7882e3dce77f3a28.webp" alt="Апартаменты Карат Апартамент">
+                            </div>
+                            <div class="flat-spec">
+                                <h6>Апартаменты с 3 спальнями</h6>
+                                <p>от 300 м<sup>2</sup><br>Ремонт</p>
+                                <!-- <p>от <span class="price">0</span></p> -->
+                            </div>
+                            <button class="btn btn-block callback-modal" data-toggle="modal" data-target="#modal_formFlats">Узнать цены и подробности</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-six">
+        <div class="make-borders">
+            <div class="container">
+                <div class="row calculator-wrapper">
+                    <div class="sliders col-12 col-lg-8">
+                        <h3 class="section-title">Ипотечный калькулятор</h3>
+                        <div class="row mortgage-options">
+                            <div class="flat-price">
+                                <p>Стоимость квартиры</p>
+                                <h4 id="flatPriceValue"><span class='value'>5 000 000</span> &#8381;</h4>
+                                <hr>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1000000" max="10000000" step="10000" value="5000000" class="slider striped-slider-button" id="flatPrice">
+                                </div>
+                            </div>
+                            <div class="first-pay">
+                                <p>Первоначальный взнос</p>
+                                <h4 id="firstPayValue"><span class='value'>5 000 000</span> &#8381; (100%)</h4>
+                                <hr>
+                                <div class="slidecontainer">
+                                    <input type="range" min="100000" max="9000000" value="5000000" step="10000" class="slider striped-slider-button" id="firstPay">
+                                </div>
+                            </div>
+                            <div class="mortgage-period">
+                                <p>Срок ипотеки</p>
+                                <h4 id="mortgagePeriodValue"><span class='value'>15 лет</span></h4>
+                                <hr>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="30" value="15" class="slider striped-slider-button" id="mortgagePeriod">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mortgage-result text-center col-12 col-lg-4 d-flex flex-column justify-content-center">
+                        <h6>Ежемесячный платёж</h6>
+                        <h1 id="resultMortgageValue">0 &#8381;/мес</h1>
+                        <button class="btn btn-primary rounded-btn big-btn callback-modal p-0" data-toggle="modal" data-target="#modal_formIpoteka">Получить подробный расчёт</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- QUIZ SECTION -->
+
+    <section class="section-eight">
+        <div class="container quiz-header text-center lazy-background">
+            <p class="progress-count"><span class="current-slide">1</span> / <span class="total-slides">7</span></p>
+            <div class="progress">
+                <div id="quizProgress" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h6>Ответьте на несколько вопросов</h6>
+            <p>и мы сделаем для Вас подборку<br>актуальных квартир по Вашим параметрам</p>
+        </div>
+        <div id="slider_quiz" class="container swiper-container">
+            <div class="quiz-wrapper swiper-wrapper">
+                <div id="questionNumber1" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion1" class="quiz-question">1. Для чего вы хотите приобрести квартиру?</h3>
+                        <div class="row container mx-auto">
+                            <input type="button" class="col-12 col-lg-3 offset-lg-1 my-lg-1 btn big-btn btn-light rounded-btn first-question-btn next-quiz-btn" name="quest1" data-code="1" value="Для жизни и отдыха">
+                            <input type="button" class="col-12 col-lg-3 offset-lg-1 my-lg-1 btn big-btn btn-light rounded-btn first-question-btn next-quiz-btn" name="quest1" data-code="1" value="Инвестиция">
+                            <input type="button" class="col-12 col-lg-3 offset-lg-1 my-lg-1 btn big-btn btn-light rounded-btn first-question-btn next-quiz-btn" name="quest1" data-code="1" value="Другое">
+                            <input type="hidden" data-code="1" value="test" id="step1value">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionNumber2" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion2" class="quiz-question">2. Ваш примерный бюджет</h3>
+                        <div class="row">
+                            <div class="col-10 offset-1 col-lg-6 offset-lg-3 px-0">
+                                <div class="slidecontainer">
+                                    <input type="range" min="1000000" max="30000000" step="10000" value="1000000" class="swiper-no-swiping slider striped-slider-button" id="quizBudgeteSlider">
+                                    <input type="hidden" data-code="2" value="1000000" id="hiddenBudgeteValue">
+                                </div>
+                                <div id="budgeteValue">1 000 000 ₽</div>
+                                <button id="questionTwoBtn" class="col-12 btn big-btn btn-light rounded-btn next-quiz-btn">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionNumber3" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion3" class="quiz-question">3. Вид на море</h3>
+                        <div class="row">
+                            <div class="col-10 offset-1 col-lg-4 offset-lg-4 px-0">
+                                <div class="form-check form-check-inline d-block text-left ">
+                                    <input class="form-check-input d-none" type="radio" name="sea_view" data-code="3" id="seaViewDemand" value="обязательно">
+                                    <label class="form-check-label radio-label" for="seaViewDemand">обязательно</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="radio" name="sea_view" data-code="3" id="seaViewMaybe" value="желательно">
+                                    <label class="form-check-label radio-label" for="seaViewMaybe">желательно</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="radio" name="sea_view" data-code="3" id="seaViewNomatter" value="не важно">
+                                    <label class="form-check-label radio-label" for="seaViewNomatter">не важно</label>
+                                </div>
+                                <button id="questionThreeBtn" class="col-12 btn big-btn btn-light rounded-btn next-quiz-btn unactive mt-4">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionNumber4" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion4" class="quiz-question">4. Удаленность от моря</h3>
+                        <div class="row">
+                            <div class="col-10 offset-1 col-lg-4 offset-lg-4 px-0">
+                                <div class="form-check form-check-inline d-block text-left">
+                                    <input class="form-check-input d-none" type="radio" name="sea_distance" data-code="4" id="seaDist100" value="до 100 м.">
+                                    <label class="form-check-label radio-label" for="seaDist100">до 100 м.</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="radio" name="sea_distance" data-code="4" id="seaDist500" value="до 500 м.">
+                                    <label class="form-check-label radio-label" for="seaDist500">до 500 м.</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="radio" name="sea_distance" data-code="4" id="seaDistNomatter" value="не важно">
+                                    <label class="form-check-label radio-label" for="seaDistNomatter">не важно</label>
+                                </div>
+                                <button id="questionFourBtn" class="col-12 btn big-btn btn-light rounded-btn next-quiz-btn unactive mt-4">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionNumber5" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion5" class="quiz-question">5. Количество комнат</h3>
+                        <div class="row">
+                            <div class="col-10 offset-1 col-lg-4 offset-lg-4 px-0">
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="5" id="roomStudio" value="студия">
+                                    <label class="form-check-label checkbox-label" for="roomStudio">студия</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="5" id="room1" value="однокомнатная">
+                                    <label class="form-check-label checkbox-label" for="room1">однокомнатная</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="5" id="room2" value="двухкомнатная">
+                                    <label class="form-check-label checkbox-label" for="room2">двухкомнатная</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="5" id="room3" value="трёхкомнатная">
+                                    <label class="form-check-label checkbox-label" for="room3">трёхкомнатная</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="5" id="room4" value="четырёхкомнатная и более">
+                                    <label class="form-check-label checkbox-label" for="room4">четырёхкомнатная и более</label>
+                                </div>
+                                <button id="questionFiveBtn" class="col-12 btn big-btn btn-light rounded-btn next-quiz-btn unactive mt-4">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionNumber6" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion6" class="quiz-question">6. Планируемый или желательный способ оплаты</h3>
+                        <div class="row">
+                            <div class="col-10 offset-1 col-lg-4 offset-lg-4 px-0">
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input" type="checkbox" name="room_count" data-code="6" id="cashpayment" value="наличный расчет">
+                                    <label class="form-check-label checkbox-label" for="cashpayment">наличный расчет</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="6" id="ipoteka" value="ипотека">
+                                    <label class="form-check-label checkbox-label" for="ipoteka">ипотека</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="6" id="matkapital" value="материнский капитал">
+                                    <label class="form-check-label checkbox-label" for="matkapital">материнский капитал</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="6" id="rassrochka" value="рассрочка от застройщика">
+                                    <label class="form-check-label checkbox-label" for="rassrochka">рассрочка от застройщика</label>
+                                </div>
+                                <div class="form-check form-check-inline d-block text-left mt-4 mt-lg-1">
+                                    <input class="form-check-input d-none" type="checkbox" name="room_count" data-code="6" id="otheroption" value="другое">
+                                    <label class="form-check-label checkbox-label" for="otheroption">другое</label>
+                                </div>
+                                <button id="questionSixBtn" class="col-12 btn big-btn btn-light rounded-btn next-quiz-btn unactive mt-4">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionNumber7" class="quiz-body text-center swiper-slide">
+                    <div class="container slide-wrapper">
+                        <h3 id="quizQuestion7" class="quiz-question mb-6">Мы сделали для вас подборку<br>актуальных квартир по вашим<br>параметрам</h3>
+                        <div class="row mt-2">
+                            <div class="chosen-vars quiz-values col-12 col-lg-3 text-left d-none d-lg-block">
+                                <!--ТУТ БУДЕТ ТЕКСТ С ВЫБРАННЫМИ ОТВЕТАМИ-->
+                            </div>
+                            <div class="final-form col-12 col-lg-8 offset-lg-1 pt-3 pt-lg-0">
+                                <div class="row">
+                                    <div class="final-form-title col-12 col-lg-8 offset-lg-2 pb-5">
+                                        <h5>Оставьте свой контакт и мы вышлем персональную подборку вам на почту</h5>
+                                    </div>
+                                    <div class="final-form-body quiz-form-wrapper col-12 col-lg-8 offset-lg-2">
+                                        <form id="kviz" class="send-ajax" action="/netcat/add.php?cc=15399&sub=10594&posting=1">
+                                            <input type="hidden" name="catalogue" value="249" />
+                                            <input type="hidden" name="cc" value="15399" />
+                                            <input type="hidden" name="sub" value="10594" />
+                                            <input type="hidden" name="curPos" value="0" />
+                                            <input type="hidden" name="posting" value="1" />
+                                            <div class="alert alert-success" role="alert" style="display: none">
+                                                <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                                            </div>
+                                            <input class="form-control mb-3" type="text" placeholder="Имя" name="f_NAME" required="">
+                                            <input class="form-control mb-3" type="tel" placeholder="Телефон" name="f_PHONE" required="">
+                                            <input class="form-control mb-3" type="email" placeholder="E-mail" name="f_EMAIL" required="">
+                                            <input name="f_KWIZ_RESULT" type="hidden" value="">
+                                            <button id="questionSevenBtn" class="btn btn-danger rounded-btn big-btn mt-5" type="submit">Получить цены и планировки</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="section-nine d-none d-lg-block" id="mapSection">
+        <div class="yandex-map-wrapper">
+            <div class="map-makers-descr d-flex flex-column">
+                <div class="d-none d-md-block d-lg-block d-xl-block">
+                    <p class="location-title">Расположение</p>
+                    <h5>Сочи,<br> ул. Орджоникидзе, 15к17</h5>
+                    <div class="row">
+                        <p class='purple-point col-7 map-point'>Красная Поляна</p>
+                        <p class="col-4 map-time"><strong>45</strong> минут</p>
+                    </div>
+                    <div class="row">
+                        <p class='orange-point col-7 map-point'>Адлерский район</p>
+                        <p class="col-4 map-time"><strong>25</strong> минут</p>
+                    </div>
+                    <div class="row">
+                        <p class='green-point col-7 map-point'>Центральный район</p>
+                        <p class="col-4 map-time"><strong>1</strong> минута</p>
+                    </div>
+                </div>
+            </div>
+            <div id="YMapBlock" data-params='{"X":"43.553411","Y":"40.278158","ZOOM":"10"}' data-points='[{"ICON":"\/netcat_files\/10594\/15392\/map_icon_main.png","NAME":"\u041a\u0430\u0440\u0430\u0442 \u0410\u043f\u0430\u0440\u0442\u0430\u043c\u0435\u043d\u0442","TEXT":"\u0421\u043e\u0447\u0438, \u0443\u043b. \u041e\u0440\u0434\u0436\u043e\u043d\u0438\u043a\u0438\u0434\u0437\u0435, 15\u043a17","TIME":"","OFFSET_X":"-17","OFFSET_Y":"-50","X":"43.575651","Y":"39.726709","WIDTH":49,"HEIGHT":53,"LEGEND_HIDE":"1"},{"ICON":"\/netcat_files\/10594\/15392\/map_icon_perpl.png","NAME":"\u041a\u0440\u0430\u0441\u043d\u0430\u044f \u041f\u043e\u043b\u044f\u043d\u0430","TEXT":"45 \u043c\u0438\u043d\u0443\u0442 \u0432 \u043f\u0443\u0442\u0438","TIME":"&lt;strong&gt;45&lt;\/strong&gt; \u043c\u0438\u043d\u0443\u0442","OFFSET_X":"-17","OFFSET_Y":"-17","X":"43.67726","Y":"40.203354","WIDTH":34,"HEIGHT":34,"LEGEND_HIDE":"0"},{"ICON":"\/netcat_files\/10594\/15392\/map_icon_orange.png","NAME":"\u0410\u0434\u043b\u0435\u0440\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d","TEXT":"25 \u043c\u0438\u043d\u0443\u0442 \u0432 \u043f\u0443\u0442\u0438","TIME":"&lt;strong&gt;25&lt;\/strong&gt; \u043c\u0438\u043d\u0443\u0442","OFFSET_X":"-17","OFFSET_Y":"-17","X":"43.444161","Y":"39.913479","WIDTH":34,"HEIGHT":34,"LEGEND_HIDE":"0"},{"ICON":"\/netcat_files\/10594\/15392\/map_icon_green.png","NAME":"\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0440\u0430\u0439\u043e\u043d","TEXT":"1 \u043c\u0438\u043d\u0443\u0442\u0430 \u0432 \u043f\u0443\u0442\u0438","TIME":"&lt;strong&gt;1&lt;\/strong&gt; \u043c\u0438\u043d\u0443\u0442\u0430","OFFSET_X":"-17","OFFSET_Y":"-17","X":"43.608507","Y":"39.727866","WIDTH":34,"HEIGHT":34,"LEGEND_HIDE":"0"}]'></div>
+    </section>
+
+    <div id="modal_formCall" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="modalTitle" class="modal-title text-center">Перезвонить мне</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+                </div>
+                <div class="modal-body">
+                    <div class="what-you-get-list">
+                        <h6 class="list-title text-center py-2">Оставьте свои данные и Вы получите:</h6>
+                        <ul>
+                            <li>каталог с ценами и планировками</li>
+                            <li>документацию и информацию о жилом комплексе</li>
+                            <li>актуальные фотографии и видео</li>
+                            <li>список акционных квартир со скидками</li>
+                        </ul>
+                    </div>
+                    <form id="formCall" class="send-ajax" action="/netcat/add.php?cc=15393&sub=10594&posting=1">
+
+                        <input type="hidden" name="catalogue" value="249" />
+                        <input type="hidden" name="cc" value="15393" />
+                        <input type="hidden" name="sub" value="10594" />
+                        <input type="hidden" name="curPos" value="0" />
+                        <input type="hidden" name="posting" value="1" />
+                        <div class="alert alert-success" role="alert" style="display: none">
+                            <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                        </div>
+                        <input class="form-control" type="text" name="f_NAME" placeholder="Имя" required>
+                        <input class="form-control" type="tel" name="f_PHONE" placeholder="Телефон" required>
+                        <button id="callbackModalBtn" class="btn btn-block btn-danger rounded-btn big-btn my-5 col-lg-8 offset-lg-2" type="submit" value="">Перезвонить мне</button>
+                    </form>
+                    <h6 class="text-center">Или позвоните нам, мы ответим на все Ваши вопросы</h6>
+                    <h4 class="text-center">
+                        +7 (938) 460 83 50
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal_formFlats" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="modalTitle" class="modal-title text-center">Узнать цены и подробности</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+                </div>
+                <div class="modal-body">
+                    <div class="what-you-get-list">
+                        <h6 class="list-title text-center py-2">Оставьте свои данные и Вы получите:</h6>
+                        <ul>
+                            <li>каталог с ценами и планировками</li>
+                            <li>документацию и информацию о жилом комплексе</li>
+                            <li>актуальные фотографии и видео</li>
+                            <li>список акционных квартир со скидками</li>
+                        </ul>
+                    </div>
+                    <form id="formFlats" class="send-ajax" action="/netcat/add.php?cc=15394&sub=10594&posting=1">
+
+                        <input type="hidden" name="catalogue" value="249" />
+                        <input type="hidden" name="cc" value="15394" />
+                        <input type="hidden" name="sub" value="10594" />
+                        <input type="hidden" name="curPos" value="0" />
+                        <input type="hidden" name="posting" value="1" />
+                        <div class="alert alert-success" role="alert" style="display: none">
+                            <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                        </div>
+                        <input class="form-control" type="text" name="f_NAME" placeholder="Имя" required>
+                        <input class="form-control" type="tel" name="f_PHONE" placeholder="Телефон" required>
+                        <button id="callbackModalBtn" class="btn btn-block btn-danger rounded-btn big-btn my-5 col-lg-8 offset-lg-2" type="submit" value="">Узнать цены и подробности</button>
+                    </form>
+                    <h6 class="text-center">Или позвоните нам, мы ответим на все Ваши вопросы</h6>
+                    <h4 class="text-center">
+                        +7 (938) 460 83 50
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer itemscope itemtype="http://schema.org/WPFooter" id="contactsSection" class="section-ten footer text-center lazy-background">
+        <h2 itemprop="headline">Остались вопросы?</h2>
+        <p itemprop="description" class="managers-consult">Наши менеджеры проконсультируют<br>вас по любым вопросам</p>
+        <div class="row our-contacts">
+            <h5 class="col-12">
+                +7 (928) 854 97 23 </h5>
+        </div>
+        <div class="form-wrapper">
+            <div class="footer-form-icon">
+                <img src="./lp2/img/footer-form-icon.png" alt="">
+            </div>
+            <h5 class="form-title">Оставьте свои данные<br>и мы свяжемся с вами</h5>
+            <form class="form send-ajax" id="formFooter" action="/netcat/add.php?cc=15395&sub=10594&posting=1">
+
+                <div class="alert alert-success" role="alert" style="display: none">
+                    <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                </div>
+
+                <div class="row form-group">
+                    <input type="hidden" name="catalogue" value="249" />
+                    <input type="hidden" name="cc" value="15395" />
+                    <input type="hidden" name="sub" value="10594" />
+                    <input type="hidden" name="curPos" value="0" />
+                    <input type="hidden" name="posting" value="1" />
+                    <div class="col-12 col-lg-4 footer-form-bottom">
+                        <input class="form-control" name="f_NAME" type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="col-12 col-lg-4 footer-form-bottom">
+                        <input class="form-control" name="f_PHONE" type="text" placeholder="Телефон" required>
+                    </div>
+                    <div class="col-12 col-lg-4 footer-form-bottom">
+                        <button class="btn btn-block btn-danger rounded-btn big-btn" type="submit">Узнать цены и подробности</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <p class="footer-copyright">© 2022. Karat Apartments</p>
+        <meta itemprop="copyrightYear" content="2021">
+    </footer>
+
+
+
+    <div id="modal_formIpoteka" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="modalTitle" class="modal-title text-center">Получить подробный расчет</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+                </div>
+                <div class="modal-body">
+                    <div class="what-you-get-list">
+                        <h6 class="list-title text-center py-2">Оставьте свои данные и Вы получите:</h6>
+                        <ul>
+                            <li>каталог с ценами и планировками</li>
+                            <li>документацию и информацию о жилом комплексе</li>
+                            <li>актуальные фотографии и видео</li>
+                            <li>список акционных квартир со скидками</li>
+                        </ul>
+                    </div>
+                    <form id="formIpoteka" class="send-ajax" action="/netcat/add.php?cc=15397&sub=10594&posting=1">
+
+                        <input type="hidden" name="catalogue" value="249" />
+                        <input type="hidden" name="cc" value="15397" />
+                        <input type="hidden" name="sub" value="10594" />
+                        <input type="hidden" name="curPos" value="0" />
+                        <input type="hidden" name="posting" value="1" />
+                        <div class="alert alert-success" role="alert" style="display: none">
+                            <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                        </div>
+                        <input class="form-control" type="text" name="f_NAME" placeholder="Имя" required>
+                        <input class="form-control" type="tel" name="f_PHONE" placeholder="Телефон" required>
+                        <button id="callbackModalBtn" class="btn btn-block btn-danger rounded-btn big-btn my-5 col-lg-8 offset-lg-2" type="submit" value="">Получить подробный расчет</button>
+                    </form>
+                    <h6 class="text-center">Или позвоните нам, мы ответим на все Ваши вопросы</h6>
+                    <h4 class="text-center">
+                        +7 (938) 460 83 50
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal_formSale" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="modalTitle" class="modal-title text-center">Получить скидку на квартиру</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+                </div>
+                <div class="modal-body">
+                    <div class="what-you-get-list">
+                        <h6 class="list-title text-center py-2">Оставьте свои данные и Вы получите:</h6>
+                        <ul>
+                            <li>каталог с ценами и планировками</li>
+                            <li>документацию и информацию о жилом комплексе</li>
+                            <li>актуальные фотографии и видео</li>
+                            <li>список акционных квартир со скидками</li>
+                        </ul>
+                    </div>
+                    <form id="formSale" class="send-ajax" action="/netcat/add.php?cc=15401&sub=10594&posting=1">
+
+                        <input type="hidden" name="catalogue" value="249" />
+                        <input type="hidden" name="cc" value="15401" />
+                        <input type="hidden" name="sub" value="10594" />
+                        <input type="hidden" name="curPos" value="0" />
+                        <input type="hidden" name="posting" value="1" />
+                        <div class="alert alert-success" role="alert" style="display: none">
+                            <strong>Спасибо.</strong> Сообщение отправлено. В ближайшее время с Вами свяжутся по указанному телефону.
+                        </div>
+                        <input class="form-control" type="text" name="f_NAME" placeholder="Имя" required>
+                        <input class="form-control" type="tel" name="f_PHONE" placeholder="Телефон" required>
+                        <button id="callbackModalBtn" class="btn btn-block btn-danger rounded-btn big-btn my-5 col-lg-8 offset-lg-2" type="submit" value="">Получить скидку на квартиру</button>
+                    </form>
+                    <h6 class="text-center">Или позвоните нам, мы ответим на все Ваши вопросы</h6>
+                    <h4 class="text-center">
+                        +7 (938) 460 83 50
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section class="popup-new__bottom popup-new-bottom">
+        <div class="container">
+            <div class="d-flex">
+                <div class="popup-new-bottom__border">
+                    <div class="popup-new-bottom__form">
+                        <div class="popup-new-bottom__close-block">
+                            <img class="popup-new-bottom__close" src="./src/images/popup-bottom/close-icon.svg" alt="">
+                        </div>
+                        <div class="popup-big-modal">
+                            <div class="popup-new-bottom__top-block popup-new-bottom-top-block">
+                                <div class="popup-new-bottom-top-block__img-block">
+                                    <img class="popup-new-bottom-top-block__img" src="./src/images/popup-bottom/icon-circle-thunderbolt.svg" alt="">
+                                    <span class="popup-new-bottom-top-block__txt">Только у нас</span>
+                                </div>
+                            </div>
+                            <div class="popup-new-bottom__zhk-img-block">
+                                <img width="72" height="72" src="./netcat_files/10594/15396/10min.jpg" alt="">
+                            </div>
+                            <div class="popup-new-bottom__title">
+                                <a href="#" class="popup-new-bottom__title-link popup-big-modal">Карат Апартамент</a>
+                            </div>
+                            <div class="popup-new-bottom__title-caption">
+                                <a href="#" class="popup-new-bottom__title-caption-link popup-big-modal">
+                                            Эксклюзивное предложение от 3 июня                                        </a>
+                            </div>
+                            <div class="popup-new-bottom__main-text">
+                                <a href="#" class="popup-new-bottom__main-text-link popup-big-modal">
+                                            Квартиры от инвестора на <span class="popup-new-bottom__main-text-price">1 000 000 ₽</span></br>
+                                            дешевле, чем у застройщика.
+                                        </a>
+                            </div>
+                            <div class="popup-new-bottom__bottom-block">
+                                <a href="#" class="popup-new-bottom__bottom-block-link popup-big-modal">
+                                            Получить планировки и цены
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="popupBigModal" class="modal fade big-modal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="row mx-auto big-modal-wrapper">
+                    <button class="modal-form-right__close-btn" type="button" class="close" data-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+                                <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="square" stroke-width="3">
+                                    <path d="M41.04 12.96L12.97 41.03M41.07 41.07L13 13"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    <div class="modal-descr-left col-12 col-lg-7 px-md-5 pt-5 p-lg-5">
+                        <div class="big-modal__img">
+                            <img width="72" height="72" src="./netcat_files/10594/15396/10min.jpg" alt="">
+                            <div class="row modal-descr-left__row py-3">
+                                <h6 class="big-modal__zhk-name col-7 col-lg-5">Карат Апартамент</h6>
+                                <div class="row modal-descr-left__lightning-row">
+                                    <div class="thunderbolt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18">
+                                                <path fill="#00c838" d="M13.68 5.688H7.466L10.769 0h-7.47L0 9.359h5.304L2.953 18z"></path>
+                                            </svg>
+                                    </div>
+                                    <h6 class="big-modal__lightning-deal ml-3">Только у нас</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-modal__title">
+                            <h4>Получить цены и планировки Карат Апартамент</h4>
+                        </div>
+                        <div class="big-modal__list-block py-3">
+                            <ul class="big-modal__list">
+                                <li class="big-modal__list-item">цены на наши акционные квартиры + сравнение с ценами застройщика (дешевле на 1 млн. рублей)</li>
+                                <li class="big-modal__list-item">планировки</li>
+                                <li class="big-modal__list-item">актуальные фото и видео квартир и комплекса внутри и снаружи</li>
+                                <li class="big-modal__list-item">документацию и информацию о жилом комплексе</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-form-right col-12 col-lg-5 px-md-5 pt-5 pl-lg-3">
+                        <h5 class="modal-form-right__title">Оставьте свои данные</h5>
+                        <p class="modal-form-right__caption py-2">Спешите! Количество квартир ограничено! Эксклюзивно только у нас, таких предложений вы не найдете нигде!</p>
+                        <form class="modal-form-right__form-wrapper send-ajax" id="first" action="/netcat/add.php?cc=249&sub=10594&posting=1">
+                            <div class="form_alert_block mb-4">
+                                <div class="alert alert-success mt-4" role="alert" style="display: none">
+                                    <strong>Спасибо.</strong> Сообщение отправлено. <br> В ближайшее время с Вами свяжутся по указанному телефону.
+                                </div>
+                            </div>
+                            <input type="hidden" name="its_telephone" value="true" />
+                            <input type="hidden" name="receive-path-promo" value="295" />
+                            <input type="hidden" name="catalogue" value="249" />
+                            <input type="hidden" name="cc" value="249" />
+                            <input type="hidden" name="sub" value="10594" />
+                            <input type="hidden" name="curPos" value="0" />
+                            <input type="hidden" name="posting" value="1" />
+                            <input class="form-control no-border-input" name="f_NAME" value="" type="text" placeholder="Имя" require>
+                            <input class="form-control no-border-input" name="f_PHONE" value="" type="tel" placeholder="Телефон" require>
+                            <button class="btn btn-block btn-danger rounded-btn modal-form-right__btn big-btn my-5" type="submit" value="">Получить цены и планировки</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./src/js/build.min.js"></script>
+
+</body>
+
+</html>
